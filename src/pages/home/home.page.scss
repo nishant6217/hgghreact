@@ -1,0 +1,46 @@
+.home-page-loading {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  img {
+    max-width: 130px;
+    margin-bottom: 15px;
+    -webkit-animation: blink 2s infinite;
+    animation: blink 2s infinite;
+  }
+  &.loading {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+@keyframes blink {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  //   25% {
+  //     opacity: 0.5;
+  //     -webkit-transform: scale(0.8);
+  //     transform: scale(0.8);
+  //   }
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  //   75% {
+  //     opacity: 0.5;
+  //     -webkit-transform: scale(0.8);
+  //     transform: scale(0.8);
+  //   }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+}
