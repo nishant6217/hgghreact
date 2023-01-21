@@ -46,7 +46,7 @@ export const HomePage = () => {
       return;
     }
     axios
-      .post("http://localhost:3030/api/sd", formData)
+      .post("https://backend-nzz3.onrender.com/api/sd", formData)
       .then((response) => {
         if (response.status === 200) {
           console.log(response);
